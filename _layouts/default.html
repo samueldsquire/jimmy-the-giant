@@ -3,17 +3,17 @@
 ---
 
 <!DOCTYPE html>
-<html class="entire-site">
+<html>
 	{% include head.html %}
-	<div class="noise"></div>
 	<body>
-			{% comment %}
-			{% include side-menu.html %}
-			{% endcomment %}
+		<div class="noise"></div>
+		{% include side-menu.html %}
+
+		<div class="entire-site">
 			{% include header.html %}
 			{{ content }}
 			{% include footer.html %}
-
+		</div>
 	</body>
 	{% include footer__scripts.html %}
 </html>

@@ -2,4 +2,12 @@
 	<a href="{{ site.url }}">
 		<h1>{{ site.url }}</h1>
 	</a>
+    {% for item in site.data.navigation %}
+        {% capture page_title_stripped %}{{ page.url | remove: "/" }}{% endcapture %}
+        {% if page_title_stripped == item %}
+            <a href="{{ site.url }}/{{ item }}/" class="side-menu__link current">{{ item }}</a>
+        {% else %}
+            <a href="{{ site.url }}/{{ item }}/" class="side-menu__link">{{ item }}</a>
+        {% endif %}
+    {% endfor %}
 </div>

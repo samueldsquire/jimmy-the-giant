@@ -11,12 +11,12 @@ jQuery(document).ready(function($){
 		$('.menu-icon').removeClass('transformed');
 		$('.menu-icon__container').removeClass('transformed');
 	});
-	$(document).keyup(function(e) { 
+	$(document).keyup(function(e) {
 	    if (e.keyCode == 27) {
 	    	$('#sideMenu').removeClass('sideMenuOpen');
 	    	$('.entire-site').removeClass('entire-site--hidden');
 	    	$('.menu-icon').removeClass('transformed');
 	    	$('.menu-icon__container').removeClass('transformed');
-	    } 
+	    }
 	});
 });

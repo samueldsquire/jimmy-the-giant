@@ -2,6 +2,7 @@
 $breakpoints: (
 's'  : '(max-width: 600px)',
 'm'  : '(max-width: 700px)',
+'l'  : '(min-width: 700px)',
 'r'  : '(max-width: 1060px)',
 'rv'  : '(min-width:' $site__width')'
 );

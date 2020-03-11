@@ -1,14 +1,16 @@
-<header class="header">
-    <h1 class="site__title text-center"><a class="site-title__link" href="{{ site.url }}">Jimmy The Giant</a></h1>
-	<nav class="nav">
-        {% for item in site.data.navigation %}
-            {% capture page_title_stripped %}{{ page.url | remove: "/" }}{% endcapture %}
-            {% if page_title_stripped == item %}
-                <a href="{{ site.url }}/{{ item }}/" class="nav__item current">{{ item }}</a>
-            {% else %}
-                <a href="{{ site.url }}/{{ item }}/" class="nav__item">{{ item }}</a>
-            {% endif %}
-        {% endfor %}
-	</nav>
-    <img src="{{ site.url }}/img/jtg__menu.svg" alt="Menu Icon" class="menu-icon">
-</header>
+<div class="header__wrapper">
+    <header class="header">
+        <h1 class="site__title text-center"><a class="site-title__link" href="{{ site.url }}">Jimmy The Giant</a></h1>
+        <nav class="nav">
+            {% for item in site.data.navigation %}
+                {% capture page_title_stripped %}{{ page.url | remove: "/" }}{% endcapture %}
+                {% if page_title_stripped == item %}
+                    <a href="{{ site.url }}/{{ item }}/" class="nav__item current">{{ item }}</a>
+                {% else %}
+                    <a href="{{ site.url }}/{{ item }}/" class="nav__item">{{ item }}</a>
+                {% endif %}
+            {% endfor %}
+        </nav>
+        <img src="{{ site.url }}/img/jtg__menu.svg" alt="Menu Icon" class="menu-icon" id="sideMenuOpener">
+    </header>
+</div>

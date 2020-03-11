@@ -16,28 +16,16 @@
 
     background-color: $color__black;
 }
-.side-menu__logo {
-    display: block;
-
-    max-width: 15rem;
-    max-height: 4rem;
-    margin: 3rem auto;
-}
 
 // ---------------------
 // Text
 // ---------------------
 .side-menu__link {
     display: block;
-
     margin-right: auto;
     margin-bottom: 1rem;
     margin-left: auto;
-    max-width: 10rem;
-
-    font-weight: 700;
-
     text-align: center;
-
     color: $color__primary;
+    font-size: 2rem;
 }

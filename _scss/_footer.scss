@@ -52,14 +52,14 @@
         right: -20vw;
     }
     bottom: 0;
-    z-index: -999;
+    z-index: -998;
     width: em(200px);
 }
 .footer__bg-img {
     position: absolute;
     right: -8vw;
     bottom: -5vh;
-    z-index: -998;
+    z-index: -997;
     min-height: 90vh;
     @include b(m) {
         min-height: 80vh

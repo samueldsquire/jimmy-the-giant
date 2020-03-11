@@ -4,19 +4,21 @@ permalink: /
 title: Home
 ---
 
+ <div class="home">
+     <header class="header">
+        <h1 class="site__title text-center"><a class="site-title__link" href="{{ site.url }}">Jimmy The Giant</a></h1>
+        <nav class="nav">
+             {% for item in site.data.navigation %}
+                <a href="{{ site.url }}/{{ item }}/" class="nav__item">{{ item }}</a>
+             {% endfor %}
+        </nav>
+         <img src="{{ site.url }}/img/jtg__menu.svg" alt="Menu Icon" class="menu-icon">
+     </header>
+ </div>
 <style>
-    header {
-        height: 100%;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -moz-flex-direction: column;
-        -ms-flex-direction: column;
-        -o-flex-direction: column;
-        flex-direction: column;
-        justify-content: center;
+    @media (min-width: 700px){
+        .header__wrapper .header {
+            display: none;
+        }
     }
 </style>
