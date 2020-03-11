@@ -36,6 +36,10 @@ plugins:
 # Allow the use of _pages
 include: ['_pages']
 
+sass:
+  sass_dir: css
+  style: compressed
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
