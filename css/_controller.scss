@@ -1,0 +1,14 @@
+.controller {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color__black;
+    padding: 0.5rem 1rem;
+    border-radius: em(5px);
+    width: 130px;
+    img {
+        height: em(20px);
+        margin: 0 0.2rem;
+        cursor: pointer;
+    }
+}

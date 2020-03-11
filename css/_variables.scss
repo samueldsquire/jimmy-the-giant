@@ -1,0 +1,50 @@
+// Colors
+$color__black: black;
+$color__blue: #3D5A80;
+$color__orange: #FFE049;
+$color__white: #FAFAFF;
+$color__grey: #E6E6E6;
+
+// Base Colors
+$color__primary: $color__orange;
+$color__highlight: $color__blue;
+
+// Base Type
+$base__font-size--raw: 18;
+$base__font-size: $base__font-size--raw * 1px;
+$base__font-weight: 300;
+$base__line-height--sketch: 18;
+$base__line-height: $base__line-height--sketch / $base__font-size--raw;
+$base__color: $color__black;
+$base__bg-color: $color__primary;
+
+// Site Size
+$site__width: 1200px;
+$gutter__width: 20px;
+
+// Font Families
+$text__family--sans: bebas-neue, sans-serif;
+$text__family--serif: 'PT Serif', serif;
+$text__family--base: $text__family--sans;
+$text__headings--family: $text__family--sans;
+
+// Headings Type
+$text__headings--weight: 400;
+$text__headings--color: $color__black;
+$text__headings--capitalisation: none;
+
+// Links
+$text__link--color: $color__black;
+
+// Buttons
+$button--font-size: 12px;
+$button--text-color: $color__primary;
+$button--font-weight: 700;
+$button--letter-spacing: normal;
+$button--font-family: $text__family--sans;
+$button--font-capitalisation: none;
+$button--line-height: 20px;
+$button--padding: 10px 30px;
+$button--border: 0;
+$button--border-radius: 2px;
+$button__background-color: $color__highlight;

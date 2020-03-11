@@ -1,0 +1,48 @@
+.contact {
+    margin: auto;
+}
+.contact__form {
+    display: flex;
+}
+.contact__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.contact__left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+.contact__input {
+    border-top: none;
+    border-bottom: 3px solid $color__black;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+    padding: 0.5rem 0;
+    color: $color__black;
+    min-width: em(200px);
+    &:first-of-type {
+        border-top: 3px solid $color__black;
+    }
+    &:focus {
+        color: $color__black;
+    }
+    &::placeholder {
+        color: $color__black;
+    }
+    &:-ms-input-placeholder {
+        color: $color__black;
+    }
+    &::-ms-input-placeholder {
+        color: $color__black;
+    }
+}
+.contact__button {
+    background-color: $color__black;
+    border: none;
+    color: $color__primary;
+    padding: 0.5rem  1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+}

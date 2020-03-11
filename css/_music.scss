@@ -1,0 +1,39 @@
+.music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: em(500px);
+    margin: auto;
+    @include b(s){
+        max-width: 80vw;
+    }
+}
+.song-title {
+    border-top: em(5px) solid $color__black;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+    &:last-of-type {
+        border-bottom: em(5px) solid $color__black;
+        margin-bottom: 1rem;
+    }
+}
+.active {
+    position: relative;
+    &:before {
+        position: absolute;
+        left: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        content: ' ';
+        background-image: url('/img/jtg__now-playing.svg');
+        background-size: 28px 28px;
+        height: 28px;
+        width: 28px;
+        @include b(s){
+            display: none;
+        }
+    }
+}

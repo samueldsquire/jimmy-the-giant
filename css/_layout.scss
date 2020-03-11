@@ -1,0 +1,19 @@
+// ---------------------
+// Entire Site
+// ---------------------
+.entire-site {
+	display: block;
+
+	margin: auto;
+
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100vh;
+    background-image: url('/img/jtg__noise.png');
+}

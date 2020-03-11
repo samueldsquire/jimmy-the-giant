@@ -1,0 +1,49 @@
+// ---------------------
+// Header
+// ---------------------
+.header {
+    max-width: em(400px);
+    margin: 0 auto;
+    padding: 3rem 0 0 0;
+    @include b(m){
+        max-width: 100vw;
+        width: 100vw;
+        background-color: $color__black;
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.site__title {
+    border-top: $border;
+    border-bottom: $border;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    :hover {
+        text-decoration: none;
+    }
+    @include b(m){
+        border-top: 3px solid $color__primary;
+        border-bottom: 3px solid $color__primary;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+}
+.site-title__link {
+    color: $color__black;
+    @include b(m){
+        color: $color__primary;
+    }
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    @include b(m){
+        display: none;
+    }
+}
+.current {
+    padding-bottom: 0.3rem;
+    border-bottom: em(5px) solid $color__black;
+}

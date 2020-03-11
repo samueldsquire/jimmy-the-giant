@@ -1,0 +1,72 @@
+// ---------------------
+// Imports from _variables.scss
+// ---------------------
+html {
+    font-size: $base__font-size;
+}
+
+body {
+    font-family: $text__family--base;
+    font-weight: $base__font-weight;
+    line-height: $base__line-height;
+
+    color: $base__color;
+    // background-color: $base__bg-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $text__headings--family;
+    font-weight: $text__headings--weight;
+
+    text-transform: $text__headings--capitalisation;
+
+    color: $text__headings--color;
+}
+
+// ---------------------
+// Typography Reset
+// ---------------------
+div h1:first-child,
+div h2:first-child,
+div h3:first-child,
+div h4:first-child,
+div h5:first-child {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: $text__link--color;
+}
+
+// ---------------------
+// From Sketch.app
+// ---------------------
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209em;
+}
+
+h2 {font-size: 3.157em;}
+
+h3 {font-size: 2.369em;}
+
+h4 {font-size: 1.777em;}
+
+h5 {font-size: 1.333em;}
+
+.small {
+    font-size: 1em / 8;
+}

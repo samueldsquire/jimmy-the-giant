@@ -1,0 +1,22 @@
+<div class="video">
+
+    <iframe
+        class="video__player"
+        src="https://www.youtube.com/embed/{{ page.video }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        >
+    </iframe>
+
+    <h1 class="video__title">{{ page.video_title }}</h1>
+
+    <div class="video__bottom">
+        {% include controller.html %}
+        <div class="video__right">
+            <span class="video__meta">{{ page.date }}</span>
+            <span class="video__meta">{{ page.views }} views</span>
+        </div>
+    </div>
+
+</div>

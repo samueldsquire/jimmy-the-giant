@@ -1,0 +1,61 @@
+// Breakpoints
+$breakpoints: (
+'s'  : '(max-width: 600px)',
+'m'  : '(max-width: 700px)',
+'r'  : '(max-width: 1060px)',
+'rv'  : '(min-width:' $site__width')'
+);
+
+@mixin b($point) {
+    $query: map-get($breakpoints, $point);
+    @media #{$query} {
+        @content;
+    }
+}
+
+// em converter
+@function em($px, $base: $base__font-size) {
+    @return ($px / $base) * 1rem;
+}
+
+// Circle
+@mixin circle($width, $height: $width) {
+    width: $width;
+    height: $width;
+    margin: auto;
+
+    border-radius: 100%;
+    background-size: cover;
+}
+
+// Line Height Converter
+@mixin lh($fz, $lh: $fz*1.618) {
+    font-size: ($fz / $base__font-size--raw) * 1rem;
+    line-height: $lh / $fz;
+}
+
+// Not mixins but kinda work in here
+.linked {
+    position: relative;
+}
+
+.linker {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.entire-site--hidden {
+    display: none;
+}
+
+.entire-site--visible {
+    display: block;
+}
+
+$border: em(10px) solid $color__black;

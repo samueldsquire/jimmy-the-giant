@@ -1,0 +1,48 @@
+.video {
+    width: em(400px);
+    @include b(s){
+        width: 100vw;
+    }
+    margin: auto;
+    @include b(m){
+        padding: 0 5%;
+    }
+    padding-bottom: 3rem;
+}
+.video__player {
+    display: none;
+    margin: auto;
+    display: block;
+    border: $border;
+    width: 100%;
+    min-height: em(250px);
+    @include b(s){
+        min-height: 50vw;
+    }
+}
+.video__title {
+    margin-top: 1rem;
+    border-top: $border;
+    border-bottom: $border;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    @include b(s){
+        font-size: 1.4rem;
+    }
+}
+.video__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.video__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.video__meta {
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+}

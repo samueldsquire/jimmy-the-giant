@@ -1,0 +1,19 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html class="entire-site">
+	{% include head.html %}
+	<div class="noise"></div>
+	<body>
+			{% comment %}
+			{% include side-menu.html %}
+			{% endcomment %}
+			{% include header.html %}
+			{{ content }}
+			{% include footer.html %}
+
+	</body>
+	{% include footer__scripts.html %}
+</html>
