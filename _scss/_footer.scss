@@ -64,6 +64,7 @@
     @include b(m) {
         min-height: 80vh;
         max-width: none;
+        right: -50vw;
     }
     transform: rotate(-10deg);
     opacity: 0.05;
